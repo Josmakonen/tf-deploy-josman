@@ -28,9 +28,6 @@ module "module_ec2_instances" {
   private_key_path      = var.private_key_path
   tags                  = var.tags
   for_each              = var.ec2_config
-  /*iam_instance_profile  = module.module_iam_config.instance_profile_names*/
-  /*iam_instance_profile = module.module_iam_instance_profile_names*/
-  /*iam_instance_profile = module.module_iam_config.instance_profile_names*/
   iam_instance_profile = module.module_iam_config.instance_profile_names[each.key]
 }
 
