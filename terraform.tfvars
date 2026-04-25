@@ -2,6 +2,7 @@ cuenta           = "cuenta"
 proyecto         = "proyecto"
 key_name         = "nombrekeypair"
 private_key_path = "./nombrekeypair.pem"
+iam_instance_profile = "nombredelperfil"
 vpc_id           = "vpc-00f479057476a2db8"
 tags = {
   "tag1" = "valor"
