@@ -32,4 +32,4 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -var-file="terraform.tfvars" -auto-approvee
+        run: terraform apply -var-file="terraform.tfvars" -auto-approve
